@@ -30,7 +30,7 @@ const client = new SwiftInstance(instance, { config: './config.json' })
 client.login().then(() => {
   client.log('Logado com Sucesso!', { color: 'green', tags: ['Discord Client'] })
 
-  client.loadCommands(client.config.paths.commands)
+  client.loadCommands(client.config.paths.commands);
   client.loadEvents(client.config.paths.events)
   client.loadMongo();
   client.loadFirebase();
